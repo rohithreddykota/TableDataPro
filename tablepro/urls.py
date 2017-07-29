@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from tableproApp.views import openUI5
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^openUI5/$', openUI5),
+
 ]

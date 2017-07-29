@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'tableproApp.apps.TableproappConfig',
 ]
 
 MIDDLEWARE = [
@@ -75,11 +76,11 @@ WSGI_APPLICATION = 'tablepro.wsgi.application'
 
 DATABASES = {
     'default': {
-#        'ENGINE':'django.db.backends.mysql',
-#                'NAME':'rohithreddy$rohith_db',
-#                'USER':'rohithreddy',
-#                'PASSWORD':'rohith_db',
-#                'HOST':'rohithreddy.mysql.pythonanywhere-services.com',
+        #        'ENGINE':'django.db.backends.mysql',
+        #                'NAME':'rohithreddy$rohith_db',
+        #                'USER':'rohithreddy',
+        #                'PASSWORD':'rohith_db',
+        #                'HOST':'rohithreddy.mysql.pythonanywhere-services.com',
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
